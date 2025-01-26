@@ -15,3 +15,30 @@ Clone the repository:
 ```sh
 git clone https://github.com/mekramy/ircity.git
 ```
+
+## Structure
+
+```ts
+interface Province {
+  id: number;
+  name: string;
+  code: number;
+}
+
+interface County {
+  id: number;
+  name: string;
+  code: number;
+  province: number;
+}
+
+interface City {
+  id: number;
+  name: string;
+  code: number;
+  county: number;
+  province: number;
+  type: number;
+  bakhsh: number;
+}
+```
